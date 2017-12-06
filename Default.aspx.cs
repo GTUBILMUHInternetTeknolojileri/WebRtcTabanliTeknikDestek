@@ -12,17 +12,10 @@ namespace TeknikOfis
         protected void Page_Load(object sender, EventArgs e)
         {
             //Response.Redirect("login.aspx");
-            /*Session.Clear();
+            Session.Clear();
             Session.Abandon();
             Session.RemoveAll();
-            Server.Transfer("login.aspx");*/
-
-
-            Session["P_Id"] = "1";
-            Session["P_Ad"] = "Ahmet DURNA";
-            Session["user"] = "durna";
-            Session["Kurum_Id"] = "1";
-            Session["author"] = "1";
+            Server.Transfer("login.aspx");
 
             Response.Redirect("yonetici.aspx");
         }
