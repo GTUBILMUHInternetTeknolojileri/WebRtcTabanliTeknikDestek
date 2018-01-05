@@ -17,7 +17,14 @@ namespace TeknikOfis
             Session.RemoveAll();
             Server.Transfer("login.aspx");
 
-            Response.Redirect("yonetici.aspx");
+
+            Session["P_Id"] = "1";
+            Session["P_Ad"] = "Ahmet DURNA";
+            Session["user"] = "durna";
+            Session["Kurum_Id"] = "1";
+            Session["author"] = "1";
+
+            Response.Redirect("user.aspx");
         }
         
     }
